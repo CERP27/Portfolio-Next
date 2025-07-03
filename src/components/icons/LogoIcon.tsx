@@ -1,6 +1,3 @@
-// components/Logo.tsx
-import React from "react";
-
 interface LogoIconProps {
   width?: number | string;
   height?: number | string;
