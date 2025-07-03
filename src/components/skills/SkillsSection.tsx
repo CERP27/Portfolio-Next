@@ -19,7 +19,7 @@ export const SkillSection = ({ skills }: SkillSectionProps) => {
         <p className="items-center w-24 h-2 rounded-full bg-[#8b5cf6] mb-20" />
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 sm:px-4 lg:px-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:px-4 lg:px-8">
         {skillTypes.map((type) => (
           <SkillContainer key={type} title={type} skills={skills[type]} />
         ))}
