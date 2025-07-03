@@ -1,5 +1,5 @@
-import { Navbar } from "@/components/navbar/Navbar";
 import "./globals.css";
+import { BackgroundDecoration } from "@/components/background/BackgroundDecoration";
 
 export const metadata = {
   title: "Carlos Rojas – Portfolio",
@@ -13,8 +13,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="max-w-full mx-auto bg-gray-500">
-        <Navbar />
+      <head>
+        <script
+          src="https://www.google.com/recaptcha/api.js"
+          async
+          defer
+        ></script>
+      </head>
+      <body className="min-h-screen max-w-full mx-auto ">
+        <BackgroundDecoration />
         {children}
       </body>
     </html>
