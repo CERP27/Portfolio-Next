@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Developer Portfolio – Carlos Rojas
 
-## Getting Started
+This is my personal portfolio built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**, showcasing my featured projects, technologies I use, and contact information.
 
-First, run the development server:
+## 🚀 Tech Stack
+
+- **Next.js 14** (App Router, Server Components)
+- **TypeScript**
+- **Tailwind CSS** (with custom animations and gradients)
+- **Framer Motion** (for smooth UI animations)
+- **Prisma** + **Supabase** (production-ready database)
+- **Custom SVG icons**
+
+## 🧩 Features
+
+- Dynamic project section rendered from the database.
+- Fully responsive layout with adaptive grid system.
+- Smooth animations and visual effects (hover, scale, blur).
+- Internal navigation with scroll-to-section behavior.
+- Optimized images using Next.js `<Image />`.
+- Modular, reusable code (ProjectCard, ProjectSection, HeroSection, etc).
+
+## 🖼 Live Demo
+
+[👉 View live site](https://crdev.online)  
+
+## 📂 Project Structure
+- /app → App Router layout (Next.js)
+- /components → Reusable components (Navbar, ProjectCard, Footer...)
+- /sections → Main sections (Hero, Projects, Contact...)
+- /lib → Shared logic (utils, DB access, etc.)
+- /public → Static assets and images
+- /styles → Global styles and Tailwind config
+
+## 🛠 Getting Started
 
 ```bash
+git clone https://github.com/your-username/your-portfolio.git
+cd your-portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Make sure to set up a .env file if you're using Supabase or any external services.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is optimized for deployment on Vercel, but it can run on any Node.js-compatible hosting.
 
-## Learn More
+## 📧 Contact
 
-To learn more about Next.js, take a look at the following resources:
+Interested in collaborating or working together?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[LinkedIn](https://www.linkedin.com/in/cerp279/)
