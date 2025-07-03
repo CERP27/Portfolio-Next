@@ -6,6 +6,13 @@ generator client {
   provider = "prisma-client-js"
 }
 
+enum SkillType {
+  FRONTEND
+  BACKEND
+  BLOCKCHAIN
+  OTHER
+}
+
 model Project {
   id        String   @id @default(uuid())
   title     String
@@ -24,6 +31,7 @@ model Skill {
   id        String   @id @default(uuid())
   name      String
   logo      String
+  type      SkillType
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   personalDataId String        
@@ -47,13 +55,10 @@ model PersonalData {
   email     String
   linkedin  String
   github    String
-  location  String
-  about     String
+  about     String[]
   skills    Skill[]
   projects  Project[]
   experiences Experience[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
-
-
