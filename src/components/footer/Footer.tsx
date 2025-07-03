@@ -1,3 +1,4 @@
+"use client";
 import { GithubIcon, LinkedinIcon, MailIcon } from "../icons/icons";
 
 interface FooterProps {
