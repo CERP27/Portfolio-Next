@@ -5,8 +5,8 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "mkdbvroibtvwyiilobhn.supabase.co", // o el dominio que uses
-        pathname: "/storage/v1/object/public/**", // ajusta el path según tu URL
+        hostname: "mkdbvroibtvwyiilobhn.supabase.co",
+        pathname: "/storage/v1/object/public/projects//**",
       },
     ],
   },
